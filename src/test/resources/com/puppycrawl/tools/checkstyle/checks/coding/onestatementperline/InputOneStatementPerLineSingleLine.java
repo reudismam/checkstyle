@@ -136,7 +136,7 @@ public class InputOneStatementPerLineSingleLine {
    * on the <code>append</code>-method.
    */
   public void doStringBuffer() {
-    StringBuffer sb = new StringBuffer();
+    StringBuilder sb = new StringBuilder();
     sb.append("test ");
     sb.append("test2 ").append("test3 ");
     appendToSpringBuffer(sb, "test4");
@@ -147,7 +147,7 @@ public class InputOneStatementPerLineSingleLine {
    * @param sb The stringbuffer we want to append something
    * @param text The text to append
    */
-  private void appendToSpringBuffer(StringBuffer sb, String text) {
+  private void appendToSpringBuffer(StringBuilder sb, String text) {
     sb.append(text);
   }
 

@@ -2004,12 +2004,12 @@ public class InputFinalLocalVariableFalsePositives {
 
     // apache-ant/src/main/org/apache/tools/ant/taskdefs/optional/net/FTPTaskMirrorImpl.java
     private void foo81() {
-        StringBuffer msg;
+        StringBuilder msg;
         synchronized (this) {
-            msg = new StringBuffer("   [");
+            msg = new StringBuilder("   [");
         }
         synchronized (this) {
-            msg = new StringBuffer("   [");
+            msg = new StringBuilder("   [");
         }
     }
 
